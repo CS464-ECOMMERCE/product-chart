@@ -9,7 +9,7 @@ spec:
   clusterIP: None
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: 50050
+      targetPort: 50051
       protocol: TCP
       name: http
   selector:

@@ -42,7 +42,7 @@ securityContext:
 
 service:
   type: ClusterIP
-  port: 50050
+  port: 50051
 
 ingress:
   enabled: false
@@ -75,12 +75,12 @@ resources:
 
 livenessProbe:
   grpc:
-    port: 50050
+    port: 50051
   initialDelaySeconds: 5
   periodSeconds: 10
 readinessProbe:
   grpc:
-    port: 50050
+    port: 50051
   initialDelaySeconds: 5
   periodSeconds: 10
 
